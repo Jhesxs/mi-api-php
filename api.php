@@ -75,6 +75,7 @@ $apiHeaders = [
 
 // 4. Task Create Request
 $createPayload = [
+    "function" => "ai-image-editor",
     "model" => 2,
     "image" => "data:image/jpeg;base64," . $base64Image,
     "settings" => $encryptedSettings
