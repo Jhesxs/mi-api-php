@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: mi-api-php
+    runtime: php
+    buildCommand: ""
+    startCommand: "php -S 0.0.0.0:\$PORT"
+    envVars:
+      - key: PHP_EXTENSIONS
+        value: openssl,curl
